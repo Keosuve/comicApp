@@ -10,16 +10,16 @@ import { HeroesService } from '../../services/heroes.service';
 
 export class HeroeComponent implements OnInit {
 
-  heroe:any = {};
+  heroe: any = {};
 
   constructor(private activatedRoute: ActivatedRoute,
-              private _heroesService: HeroesService) {
+    private _heroesService: HeroesService) {
 
-      this.activatedRoute.params.subscribe(params =>{
-          this.heroe = this._heroesService.getHeroe(params['id']);
-      })
+    this.activatedRoute.params.subscribe(params => {
+      this.heroe = this._heroesService.getHeroe(params['id']);
+    });
 
-   }
+  }
 
   ngOnInit() {
   }
