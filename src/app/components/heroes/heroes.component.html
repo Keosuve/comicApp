@@ -1,13 +1,16 @@
-<h1>Héroes <small>Marvel y DC</small></h1>
-<hr>
+<h1 class="font-white animated fadeIn text-center text-uppercase heroes-title">
+  Héroes Marvel y DC
+</h1>
 <div class="card-columns">
-    <div class="card animated fadeIn" *ngFor="let heroe of heroes;">
-        <img class="card-img-top img-fluid img-round" [src]="heroe.img" [alt]="heroe.nombre">
-        <div class="card-block">
-          <h4 class="card-title">{{ heroe.nombre }}</h4>
-          <p class="card-text">{{ heroe.bio }}</p>
-          <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
-          <button (click)="verHeroe(heroe.id)" type="button" name="button" class="btn btn-outline-primary btn-block">Ver más...</button>
-        </div>
+  <div class="card animated fadeIn font-white text-center font-shadow" *ngFor="let heroe of heroes;">
+    <img class="card-img-top avatar-fluid img-round" [src]="heroe.img" [alt]="heroe.nombre">
+    <div class="card-block">
+      <h4 class="card-title text-uppercase">{{ heroe.nombre }}</h4>
+      <p class="card-text">{{ heroe.bio | truncate : 120 }}</p>
+      <p class="card-text">
+        <small class="">{{ heroe.aparicion }}</small>
+      </p>
+      <button (click)="verHeroe(heroe.id)" type="button" name="button" class="btn btn-view-heroe btn-block">Ver más...</button>
+    </div>
   </div>
 </div>

@@ -1,18 +1,23 @@
-<h1>{{ heroe.nombre | uppercase }} <small>( {{ heroe.aparicion | date:'y' }} )</small></h1>
-<hr>
-<div class="row animated fadeIn">
+<div class="card container pdng-20px text-white">
+  <h1>{{ heroe.nombre | uppercase }}
+    <small>( {{ heroe.aparicion | date:'y' }} )</small>
+  </h1>
+  <hr class="border-white">
+  <div class="row animated fadeIn">
     <div class="col-sm-4">
-        <img [src]="heroe.img" class="img-fluid" [alt]="heroe.nombre">
-        <br><br>
-        <a [routerLink]="['/heroes']" class="btn btn-outline-danger btn-block">Regresar</a>
+      <img [src]="heroe.img" class="img-fluid" [alt]="heroe.nombre">
+      <br>
+      <br>
+      <a [routerLink]="['/heroes']" class="btn btn-view-heroe btn-block">Regresar</a>
     </div>
     <div class="col-sm-8">
-        <h3>{{ heroe.nombre }}</h3>
-        <p>{{ heroe.bio }}</p>
-        <div>
-            <img *ngIf="heroe.casa == 'DC'" src="assets/images/logo-dc.jpg" class="img-logo" alt="Logo DC">
-            <img *ngIf="heroe.casa == 'Marvel'" src="assets/images/marvel-logo.png" class="img-logo" alt="Logo MARVEL">
-        </div>
+      <h3>Biografía</h3>
+      <p>{{ heroe.bio }}</p>
+      <div>
+        <img *ngIf="heroe.casa == 'DC'" src="assets/images/dc-logo.png" class="img-logo" alt="Logo DC">
+        <img *ngIf="heroe.casa == 'Marvel'" src="assets/images/marvel-logo.png" class="img-logo" alt="Logo MARVEL">
+      </div>
 
     </div>
+  </div>
 </div>

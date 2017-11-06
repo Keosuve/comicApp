@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { TruncateModule } from 'ng2-truncate/dist';
 
-//Routes
+
+// Routes
 import { APP_ROUTING } from './app.routes';
-//Services
+// Services
 import { HeroesService } from './services/heroes.service';
-//Components
+// Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
@@ -26,7 +28,8 @@ import { SearchComponent } from './components/search/search.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    TruncateModule
   ],
   providers: [
       HeroesService

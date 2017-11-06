@@ -1,41 +1,188 @@
-body{
+body {
     padding-bottom: 50px;
+    background: url("assets/images/background_main.jpg") fixed no-repeat;
+    background-size: cover;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-.mg-top-30{
+.mg-top-30 {
     margin-top: 30px;
+}
+
+.mg-right-20{
+    margin-right: 20px;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-shadow {
+    text-shadow: 4px 2px 2px rgb(15, 15, 15);
+}
+
+.pdng-20px {
+    padding: 20px;
+}
+
+.mg-bottom-0{
+    margin-bottom: 0px;
+}
+
+.card {
+    border-radius: 0px;
+    border: 15px solid rgba(254, 254, 254, 0.5);
+    background-color: rgba(22, 10, 24, 0.8);
+    -webkit-box-shadow: 6px 8px 5px 0px rgba(50, 50, 50, 0.507);
+    -moz-box-shadow: 6px 8px 5px 0px rgba(50, 50, 50, 0.507);
+    box-shadow: 6px 8px 5px 0px rgba(50, 50, 50, 0.507);
+}
+
+.heroes-title {
+    background-color: rgba(22, 10, 24, 0.8);
+    padding: 20px;
+    border: 15px solid rgba(254, 254, 254, 0.5);
+    margin-bottom: 20px;
+}
+
+.avatar-fluid {
+    max-width: 90%;
+    height: auto;
+}
+
+.border-white {
+    border-color: white;
+}
+
+.shadow {
+    -webkit-box-shadow: 6px 8px 5px 0px rgba(50, 50, 50, 0.507);
+    -moz-box-shadow: 6px 8px 5px 0px rgba(50, 50, 50, 0.507);
+    box-shadow: 6px 8px 5px 0px rgba(50, 50, 50, 0.507);
+}
+
+.navbar {
+    background-color: rgba(41, 43, 44, 0.41)!important;
+}
+.navbar-nav .nav-item{
+    padding: 0px 10px;
+    font-size: 14px
+}
+
+.navbar-nav .nav-item:hover,
+.navbar-nav .nav-item:focus,
+.navbar-nav .nav-item:active,
+.navbar-nav .nav-item.active{
+    border-radius: 30px;
+    background-color: rgba(109, 48, 118, 0.466) !important;
+    border-color: rgba(109, 48, 118, 0.466);
+    outline: none !important;
+}
+
+.btn-view-heroe {
+    background-color: rgba(254, 254, 254, 0.3);
+    border: 1px solid rgba(254, 254, 254, 0.3);
+    border-radius: 30px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-view-heroe:hover,
+.btn-view-heroe:focus,
+.btn-view-heroe:active,
+.btn-view-heroe.active{
+    background-color: rgba(254, 254, 254, 0.075);
+    border: 1px solid rgba(254, 254, 254, 0.3);
+    outline: none !important;
+    color:white;
 }
 
 /* Animatios */
 
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .fast {
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .fadeIn {
-  animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
-.img-logo{
+.img-logo {
     width: 80px;
+}
+
+.search-input {
+    border-radius: 30px;
+    background-color: rgba(254, 254, 254, 0.3);
+    font-family: FontAwesome,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 14px;
+    color:white !important;
+}
+
+.search-input:focus,
+.search-input:hover,
+.search-input:active,
+.search-input.active{
+    background-color: rgba(254, 254, 254, 0.3);
+    color:white !important;
+    border-color:#6d3076;
+}
+
+.search-input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.search-input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.search-input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.search-input:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.btn-search{
+    color: white;
+    background-image: none;
+    background-color: #6d3076;
+    border-color: #6d3076;
+    border-radius: 30px;
+    font-size: 14px
+}
+
+.btn-search:focus, 
+.btn-search:active,
+.btn-search.active,
+.btn-search:hover{
+    color: white;
+    background-image: none;
+    background-color: rgba(109, 48, 118, 0.72) !important;
+    border-color: rgba(109, 48, 118, 0.72);
+    outline: none !important;
 }
