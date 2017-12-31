@@ -61,7 +61,7 @@ export class HeroesService {
         casa: "Marvel"
       },
       {
-        id: 7,
+        id: 8,
         nombre: "Capitán América",
         bio: "Steve Rogers es producto de su época, del ambiente de guerra vivido durante la Segunda Guerra Mundial. Como Steve Rogers fue un joven estudiante de arte en conflicto con su padre, pero dándose cuanta de las atrocidades que cometían los nazis trato de enrolarse en el ejercito pero fue rechazado por su pobre condiciona física, pero lo que le faltaba en físico lo tenia en determinación, así que acepto someterme a un tratamiento experimental del ejercito que tenia como fin crear un ejercito de Súper Soldados.",
         img: "assets/images/capitan-america.png",
